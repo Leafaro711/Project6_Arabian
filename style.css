@@ -75,17 +75,17 @@ h2 {
   font-weight: 400;
 }
 
-.wrapper, main .bullet, main nav {
+.wrapper, .footer, main .bullet, main nav {
   padding: 0 5%;
 }
 
 header {
   background-color: #0e1b36;
 }
-header .wrapper, header main .bullet, main header .bullet, header main nav, main header nav {
+header .wrapper, header .footer, header main .bullet, main header .bullet, header main nav, main header nav {
   padding: 0 5%;
 }
-header .wrapper .header, header main .bullet .header, main header .bullet .header, header main nav .header, main header nav .header {
+header .wrapper .header, header .footer .header, header main .bullet .header, main header .bullet .header, header main nav .header, main header nav .header {
   width: 100%;
   height: 5.625rem;
   background-color: #0e1b36;
@@ -95,10 +95,10 @@ header .wrapper .header, header main .bullet .header, main header .bullet .heade
   align-items: center;
   justify-content: space-between;
 }
-header .wrapper .header img:hover, header main .bullet .header img:hover, main header .bullet .header img:hover, header main nav .header img:hover, main header nav .header img:hover {
+header .wrapper .header img:hover, header .footer .header img:hover, header main .bullet .header img:hover, main header .bullet .header img:hover, header main nav .header img:hover, main header nav .header img:hover {
   cursor: pointer;
 }
-header .wrapper .header__links, header main .bullet .header__links, main header .bullet .header__links, header main nav .header__links, main header nav .header__links {
+header .wrapper .header__links, header .footer .header__links, header main .bullet .header__links, main header .bullet .header__links, header main nav .header__links, main header nav .header__links {
   width: 20%;
   display: flex;
   flex-direction: row;
@@ -106,17 +106,17 @@ header .wrapper .header__links, header main .bullet .header__links, main header 
   align-items: center;
   justify-content: space-between;
 }
-header .wrapper .header__links select, header main .bullet .header__links select, main header .bullet .header__links select, header main nav .header__links select, main header nav .header__links select {
+header .wrapper .header__links select, header .footer .header__links select, header main .bullet .header__links select, main header .bullet .header__links select, header main nav .header__links select, main header nav .header__links select {
   background: transparent;
   width: 100px;
   height: 30px;
   color: white;
   border-radius: 5px;
 }
-header .wrapper .header__links a, header main .bullet .header__links a, main header .bullet .header__links a, header main nav .header__links a, main header nav .header__links a {
+header .wrapper .header__links a, header .footer .header__links a, header main .bullet .header__links a, main header .bullet .header__links a, header main nav .header__links a, main header nav .header__links a {
   color: white;
 }
-header .wrapper .header__links a:hover, header main .bullet .header__links a:hover, main header .bullet .header__links a:hover, header main nav .header__links a:hover, main header nav .header__links a:hover {
+header .wrapper .header__links a:hover, header .footer .header__links a:hover, header main .bullet .header__links a:hover, main header .bullet .header__links a:hover, header main nav .header__links a:hover, main header nav .header__links a:hover {
   color: #5da9dd;
 }
 
@@ -630,7 +630,35 @@ main .control__inner .control__main__block-item div {
   padding-right: 5%;
 }
 
-footer {
+.footer {
+  padding-top: 2%;
+  padding-bottom: 4%;
   background: #121f3a;
-  color: #444444;
+  color: #777777;
+}
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+.footer__main {
+  width: 100%;
+  display: flex;
+}
+.footer__main__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer__main__text {
+  width: 50%;
+}
+.footer__main__text .rights {
+  margin: 1% 0;
 }
