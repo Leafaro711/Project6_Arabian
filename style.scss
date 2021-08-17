@@ -43,6 +43,18 @@ header{
             width: 100%;
             height: 5.625rem;
             background-color: $bkgclr;
+            .burger{
+                display: none;
+                div {
+                width: 27px;
+                height: 2px;
+                background-color: white;
+                margin: 6px 0;
+                }
+            }
+            .lang-icon{
+                display: none;
+            }
             img:hover{
                 cursor: pointer;
             }
@@ -69,6 +81,14 @@ header{
 }
 
 main{
+    .page-form{
+        display: none;
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 5% 0;
+        color: rgb(22, 123, 192);
+    }
     .description{
         height: 32.375rem;
         background-image: url(./img/main_header_arabic.jpg);
@@ -528,6 +548,46 @@ main{
             .rights{
                 margin: 1% 0;
             }
+            img{
+                width: 100%;
+            }
         }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 758px) {
+    .lang-icon, .burger{
+        display: block !important;
+    }
+    .header__links{
+        display: none !important;
+    }
+    main{
+        .description{
+            height: auto;
+            background-position: center;
+            &-wrap{
+                padding: 0;
+                button{
+                    display: none;
+                }
+                .description__title{
+                    margin-top: 50%;
+                    margin-bottom: 20%;
+                    width: 100%;
+                }
+            }
+        }
+        .page-form{
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            line-height: 30px;
+            padding: 5% 0;
+            color: rgb(22, 123, 192);
+            font-weight: bold;
+        }
+        nav, .bonus, .bullet, .time, .unique, .control{display: none;}
+
     }
 }

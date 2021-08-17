@@ -95,6 +95,18 @@ header .wrapper .header, header .footer .header, header main .bullet .header, ma
   align-items: center;
   justify-content: space-between;
 }
+header .wrapper .header .burger, header .footer .header .burger, header main .bullet .header .burger, main header .bullet .header .burger, header main nav .header .burger, main header nav .header .burger {
+  display: none;
+}
+header .wrapper .header .burger div, header .footer .header .burger div, header main .bullet .header .burger div, main header .bullet .header .burger div, header main nav .header .burger div, main header nav .header .burger div {
+  width: 27px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+header .wrapper .header .lang-icon, header .footer .header .lang-icon, header main .bullet .header .lang-icon, main header .bullet .header .lang-icon, header main nav .header .lang-icon, main header nav .header .lang-icon {
+  display: none;
+}
 header .wrapper .header img:hover, header .footer .header img:hover, header main .bullet .header img:hover, main header .bullet .header img:hover, header main nav .header img:hover, main header nav .header img:hover {
   cursor: pointer;
 }
@@ -120,6 +132,14 @@ header .wrapper .header__links a:hover, header .footer .header__links a:hover, h
   color: #5da9dd;
 }
 
+main .page-form {
+  display: none;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 5% 0;
+  color: #167bc0;
+}
 main .description {
   height: 32.375rem;
   background-image: url(./img/main_header_arabic.jpg);
@@ -661,4 +681,45 @@ main .control__inner .control__main__block-item div {
 }
 .footer__main__text .rights {
   margin: 1% 0;
+}
+.footer__main__text img {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 758px) {
+  .lang-icon, .burger {
+    display: block !important;
+  }
+
+  .header__links {
+    display: none !important;
+  }
+
+  main .description {
+    height: auto;
+    background-position: center;
+  }
+  main .description-wrap {
+    padding: 0;
+  }
+  main .description-wrap button {
+    display: none;
+  }
+  main .description-wrap .description__title {
+    margin-top: 50%;
+    margin-bottom: 20%;
+    width: 100%;
+  }
+  main .page-form {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 5% 0;
+    color: #167bc0;
+    font-weight: bold;
+  }
+  main nav, main .bonus, main .bullet, main .time, main .unique, main .control {
+    display: none;
+  }
 }
