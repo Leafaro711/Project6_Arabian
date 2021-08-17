@@ -686,7 +686,7 @@ main .control__inner .control__main__block-item div {
   width: 100%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 758px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .lang-icon, .burger {
     display: block !important;
   }
